@@ -6,6 +6,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import { VitePWA } from 'vite-plugin-pwa'
+import WindiCSS from 'vite-plugin-windicss'
 
 export default defineConfig({
   server: {
@@ -17,6 +18,11 @@ export default defineConfig({
     }
   },
   plugins: [
+    WindiCSS({
+      preflight: {
+        enableAll: true
+      }
+    }),
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages

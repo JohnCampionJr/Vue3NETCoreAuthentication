@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const colors = require('tailwindcss/colors')
-const forms = require('@tailwindcss/forms')
-const typography = require('@tailwindcss/typography')
+const colors = require('windicss/colors')
+const forms = require('windicss/plugin/forms')
+const typography = require('windicss/plugin/typography')
 
 module.exports = {
   purge: {

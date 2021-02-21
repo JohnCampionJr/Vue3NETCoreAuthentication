@@ -1,9 +1,10 @@
 // this allows much faster HMR
 // discussed here: https://github.com/tailwindlabs/tailwindcss/issues/2820
-import './styles/tw-base.postcss'
-import './styles/tw-components.postcss'
+import 'windi.css'
+// import './styles/tw-base.postcss'
+// import './styles/tw-components.postcss'
 import './styles/main.postcss'
-import './styles/tw-utilities.postcss'
+// import './styles/tw-utilities.postcss'
 
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'pages-generated'
